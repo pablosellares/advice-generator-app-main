@@ -25,6 +25,7 @@ body {
     margin: 0 auto;
 
     @include tablet {
+      height: 100dvh;
       padding: 20px;
     }
   }
