@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
+import mobileDivider from "../assets/pattern-divider-mobile.svg";
 
 const Card = () => {
   const [advice, setAdvice] = useState({ id: null, advice: "" });
@@ -18,7 +19,7 @@ const Card = () => {
   };
   return (
     <div className="card">
-      <div>
+      <div className="card-content">
         <span className="advice-number">Advice #{advice.id}</span>
         <p className="quote">{advice.advice}</p>
       </div>
@@ -38,20 +39,7 @@ const Card = () => {
             </g>
           </g>
         </svg>
-        <svg
-          className="divider-mobile"
-          width="295"
-          height="16"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g fill="none" fillRule="evenodd">
-            <path fill="#4F5D74" d="M0 8h122v1H0zM173 8h122v1H173z" />
-            <g transform="translate(138)" fill="#CEE3E9">
-              <rect width="6" height="16" rx="3" />
-              <rect x="14" width="6" height="16" rx="3" />
-            </g>
-          </g>
-        </svg>
+        <img src={mobileDivider} className="divider-mobile" alt="" />
       </div>
       <div className="dice" onClick={handleReload}>
         <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">

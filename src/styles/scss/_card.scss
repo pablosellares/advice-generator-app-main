@@ -10,20 +10,30 @@
   text-align: center;
   width: 100%;
 
-  .advice-number {
-    color: $neonGreen;
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: 2px;
-    margin-bottom: 32px;
-    text-transform: uppercase;
-  }
+  &-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    width: 100%;
 
-  .quote {
-    color: $lightCyan;
-    font-size: 28px;
-    font-weight: 800;
-    margin-bottom: 32px;
+    .advice-number {
+      color: $neonGreen;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-bottom: 32px;
+      text-transform: uppercase;
+    }
+
+    .quote {
+      color: $lightCyan;
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 32px;
+    }
   }
 
   .divider {
@@ -32,6 +42,7 @@
 
     &-desktop {
       display: block;
+      width: 100%;
 
       @include tablet {
         display: none;
@@ -43,6 +54,7 @@
 
       @include tablet {
         display: block;
+        width: 100%;
       }
     }
   }
